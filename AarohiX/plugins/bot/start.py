@@ -29,13 +29,19 @@ from strings import get_string
 
 """
 ADISA_PICS = [
-"https://graph.org/file/e0c7e04cc0acff425fe5d.jpg",
-"https://graph.org/file/0f256eac6f4a8a053193a.jpg",
-"https://graph.org/file/e3babc6e511746be05204.jpg",
-"https://graph.org/file/323acfeef219c919091ec.jpg",
-"https://graph.org/file/1f34f63999a5599051b94.jpg",
-"https://graph.org/file/528b50c44cbfedda9c77e.jpg",
-"https://graph.org/file/365b3ab63ccd789f99bb4.jpg"
+"https://telegra.ph/file/7f44ed4c727d6b9c655cf.jpg",
+"https://telegra.ph/file/1f4b7196a50aa6c535e09.jpg",
+"https://telegra.ph/file/19961f6433d5747677d0d.jpg",
+"https://telegra.ph/file/69f06abdc7c330a007979.jpg",
+"https://telegra.ph/file/e0b414dcf8aedc36bb694.jpg",
+"https://telegra.ph/file/5dbff91edfa22be7be826.jpg",
+"https://telegra.ph/file/808e55c04d0561ec14fff.jpg",
+"https://telegra.ph/file/90392ff07e2d7f0e21ba9.jpg",
+"https://telegra.ph/file/042af63d674c1d2d813b7.jpg",
+"https://telegra.ph/file/2419bf7887f4ec2fb43fa.jpg",
+"https://telegra.ph/file/048574c4feab46ca96d56.jpg",
+"https://telegra.ph/file/7146663c51be76494a6fb.jpg",
+"https://telegra.ph/file/008d5f4a1b214d61e27e7.jpg",
 ]
 
 
@@ -51,7 +57,7 @@ async def start_pm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = first_page(_)
-            await message.reply_sticker("CAACAgUAAx0CcSyO9gACl7dkQoL0p1vXqcYtCuCHmSyh4Hi1UgACEwgAAonAEVYwaJ0Jkk8L0B4E")
+            await message.reply_sticker("CAACAgUAAxkBAAIBC2W8C_-qzcRLqX3TC77u4AABsETKGgACJQsAAqZvUFV_AW9i-hvybTQE")
             return await message.reply_photo(
                 photo=config.START_IMG_URL,
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
@@ -104,7 +110,7 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
-        await message.reply_sticker("CAACAgUAAx0CcSyO9gACl7dkQoL0p1vXqcYtCuCHmSyh4Hi1UgACEwgAAonAEVYwaJ0Jkk8L0B4E")
+        await message.reply_sticker("CAACAgUAAxkBAAIBC2W8C_-qzcRLqX3TC77u4AABsETKGgACJQsAAqZvUFV_AW9i-hvybTQE")
         await message.reply_photo(
             photo=config.START_IMG_URL,
             caption=_["start_2"].format(message.from_user.mention, app.mention),
