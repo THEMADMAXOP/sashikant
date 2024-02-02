@@ -1,8 +1,9 @@
-import math
 
+import math
+from config import SUPPORT_CHAT, OWNER_ID
 from pyrogram.types import InlineKeyboardButton
 
-from Aarohix.utils.formatters import time_to_seconds
+from AarohiX.utils.formatters import time_to_seconds
 
 
 def track_markup(_, videoid, user_id, channel, fplay):
